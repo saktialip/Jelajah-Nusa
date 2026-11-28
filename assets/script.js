@@ -183,3 +183,33 @@ tombolKembali.addEventListener("click", () => {
     bookingModalBody.scrollTo({ top: 0, behavior: "smooth" });
     inputNama.focus({ preventScroll: true });
 });
+
+// ---------- Testimoni: geser kartu dengan tombol panah ----------
+(function () {
+    const track = document.getElementById("testimoniTrack");
+    const prev = document.getElementById("testimoniPrev");
+    const next = document.getElementById("testimoniNext");
+    if (!track || !prev || !next) return;
+
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    function stepWidth() {
+        const card = track.querySelector(".testimoni-card");
+        return card ? card.offsetWidth + 22 : 300;
+    }
+
+    function updateArrows() {
+        prev.disabled = track.scrollLeft <= 4;
+        next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+    }
+
+    function geser(arah) {
+        track.scrollBy({ left: arah * stepWidth(), behavior: reduceMotion ? "auto" : "smooth" });
+    }
+
+    prev.addEventListener("click", () => geser(-1));
+    next.addEventListener("click", () => geser(1));
+    track.addEventListener("scroll", updateArrows, { passive: true });
+    window.addEventListener("resize", updateArrows);
+    updateArrows();
+})();

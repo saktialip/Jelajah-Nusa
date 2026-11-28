@@ -32,6 +32,7 @@
           <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
             <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
             <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -190,6 +191,63 @@
     </div>
   </div>
 </section>
+
+<!-- ==================== TESTIMONI ==================== -->
+<section class="testimoni" id="testimoni" aria-labelledby="testimoniTitle">
+  <div class="testimoni-header">
+    <div>
+      <span class="testimoni-badge">
+        <i class="fa-solid fa-quote-left" aria-hidden="true"></i> Testimoni
+      </span>
+      <h2 class="testimoni-title" id="testimoniTitle">Kata Mereka yang <span>Sudah Berangkat</span></h2>
+      <p class="testimoni-desc">Cerita dari traveler yang sudah memesan paket Jelajah Nusa.</p>
+    </div>
+    <div class="testimoni-nav">
+      <button type="button" class="testimoni-arrow" id="testimoniPrev" aria-label="Testimoni sebelumnya"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+      <button type="button" class="testimoni-arrow" id="testimoniNext" aria-label="Testimoni berikutnya"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+    </div>
+  </div>
+
+  <div class="testimoni-track" id="testimoniTrack" tabindex="0" aria-label="Daftar testimoni">
+      <article class="testimoni-card">
+        <div class="testimoni-stars" role="img" aria-label="Rating 5 dari 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="testimoni-quote">&ldquo;Itinerary rapi, pemandunya ramah, dan harganya persis seperti di awal. Liburan ke Labuan Bajo kami jadi tanpa stres.&rdquo;</p>
+        <span class="testimoni-pkg"><i class="fa-solid fa-suitcase-rolling" aria-hidden="true"></i>Labuan Bajo Explorer</span>
+        <div class="testimoni-person">
+          <b class="testimoni-avatar" style="background:#7FDCD0">DW</b>
+          <div><strong>Dewi N.</strong><span>Jakarta</span></div>
+        </div>
+      </article>
+      <article class="testimoni-card">
+        <div class="testimoni-stars" role="img" aria-label="Rating 5 dari 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="testimoni-quote">&ldquo;Berangkat dini hari, pemandunya hafal spot terbaik untuk melihat sunrise di Bromo. Hasil fotonya bagus semua.&rdquo;</p>
+        <span class="testimoni-pkg"><i class="fa-solid fa-suitcase-rolling" aria-hidden="true"></i>Bromo Sunrise Trip</span>
+        <div class="testimoni-person">
+          <b class="testimoni-avatar" style="background:#F6B93B">AR</b>
+          <div><strong>Arif R.</strong><span>Bandung</span></div>
+        </div>
+      </article>
+      <article class="testimoni-card">
+        <div class="testimoni-stars" role="img" aria-label="Rating 5 dari 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="testimoni-quote">&ldquo;Snorkeling di Raja Ampat melebihi ekspektasi kami. Semua biaya sudah jelas dari awal, tidak ada tambahan mendadak.&rdquo;</p>
+        <span class="testimoni-pkg"><i class="fa-solid fa-suitcase-rolling" aria-hidden="true"></i>Raja Ampat Discovery</span>
+        <div class="testimoni-person">
+          <b class="testimoni-avatar" style="background:#FFD9B0">SP</b>
+          <div><strong>Sari P.</strong><span>Surabaya</span></div>
+        </div>
+      </article>
+      <article class="testimoni-card">
+        <div class="testimoni-stars" role="img" aria-label="Rating 4 dari 5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p class="testimoni-quote">&ldquo;Bali Escape pas untuk liburan keluarga. Penginapannya nyaman dan jadwalnya tidak terlalu padat.&rdquo;</p>
+        <span class="testimoni-pkg"><i class="fa-solid fa-suitcase-rolling" aria-hidden="true"></i>Bali Escape</span>
+        <div class="testimoni-person">
+          <b class="testimoni-avatar" style="background:#B9E6A8">BK</b>
+          <div><strong>Budi K.</strong><span>Bogor</span></div>
+        </div>
+      </article>
+  </div>
+</section>
+
 <!-- ==================== DESTINASI ==================== -->
 <section class="destinations" id="destinations">
   <div class="destinasi">
@@ -575,24 +633,64 @@
 
     <!-- ==================== FOOTER ==================== -->
     <footer class="footer">
-      <div class="footer-logo">
-        <i class="fa-solid fa-compass"></i> Jelajah Nusa
-      </div>
-      
-      <p class="footer-tagline">
-        Temukan pengalaman perjalanan yang berkesan dan jelajahi keindahan Nusantara bersama kami.
-      </p>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a class="footer-logo" href="#hero">
+            <i class="fa-solid fa-compass" aria-hidden="true"></i>
+            <span class="footer-logo-name">Jelajah <span>Nusa</span></span>
+          </a>
+          <p class="footer-tagline">
+            Temukan pengalaman perjalanan yang berkesan dan jelajahi keindahan Nusantara bersama kami.
+          </p>
+          <p class="footer-social-label">Ikuti perjalanan kami</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/jelajahnusa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Jelajah Nusa">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              <span>@jelajahnusa</span>
+            </a>
+          </div>
+        </div>
 
-      <nav class="footer-nav">
-        <a href="#hero">Home</a>
-        <a href="#about">Tentang Kami</a>
-        <a href="#destinations">Destinasi</a>
-        <a href="#packages">Paket Wisata</a>
-        <a href="#contact">Kontak</a>
-      </nav>
+        <div class="footer-column">
+          <h2 class="footer-heading">Jelajahi</h2>
+          <nav class="footer-nav" aria-label="Navigasi footer">
+            <a href="#hero">Home</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#testimoni">Testimoni</a>
+            <a href="#destinations">Destinasi</a>
+            <a href="#packages">Paket Wisata</a>
+            <a href="#contact">Kontak</a>
+          </nav>
+        </div>
+
+        <div class="footer-column footer-contact">
+          <h2 class="footer-heading">Hubungi Kami</h2>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>Jl. Poras No. 7, Bogor</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+622518376224">(0251) 8376 224</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:hello@jelajahnusa.id">hello@jelajahnusa.id</a>
+            </li>
+            <li>
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              <a href="https://www.instagram.com/jelajahnusa/" target="_blank" rel="noopener noreferrer">@jelajahnusa</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <div class="footer-bottom">
-        <p>© 2026 Jelajah Nusa. Semua hak cipta dilindungi.</p>
+        <p>
+          <span>© 2026 Jelajah Nusa. Semua hak cipta dilindungi.</span>
+          <span>Dibuat untuk menemani perjalananmu.</span>
+        </p>
       </div>
     </footer>
 
