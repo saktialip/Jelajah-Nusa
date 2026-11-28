@@ -279,8 +279,8 @@ html { scroll-behavior: smooth; }
 }
 
 .btn-explore {
-    --btn-bg: var(--color-primary);
-    --btn-text: #F4F7FA;
+    --btn-bg: var(--color-accent);
+    --btn-text: #4f3b12;
 
     display: inline-flex;
     align-items: center;
@@ -297,14 +297,14 @@ html { scroll-behavior: smooth; }
     letter-spacing: 1.3px;
     text-decoration: none;
     white-space: nowrap;
-    box-shadow: 0 10px 24px -8px rgba(56, 163, 165, 0.8);
+    box-shadow: 0 10px 24px -8px rgba(246, 185, 59, 0.45);
     transition: transform .2s, box-shadow .2s;
 }
 
 .btn-explore:hover {
     color: var(--btn-text);
     transform: translateY(-2px);
-    box-shadow: 0 14px 28px -8px rgba(56, 163, 165, 0.9);
+    box-shadow: 0 14px 28px -8px rgba(246, 185, 59, 0.6);
 }
 
 .btn-explore:focus-visible,
